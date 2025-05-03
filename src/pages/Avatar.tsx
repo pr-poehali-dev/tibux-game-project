@@ -6,7 +6,7 @@ import {
   CircleUserRound, 
   Shirt, 
   Palette, 
-  Pants, 
+  Footprints, // Заменил Pants на Footprints
   Sparkles, 
   Gift, 
   ShoppingCart
@@ -96,7 +96,7 @@ const Avatar = () => {
                     <Shirt size={16} /> Одежда
                   </TabsTrigger>
                   <TabsTrigger value="pants" className="flex items-center gap-1 data-[state=active]:bg-tibux-primary data-[state=active]:text-white">
-                    <Pants size={16} /> Штаны
+                    <Footprints size={16} /> Штаны
                   </TabsTrigger>
                   <TabsTrigger value="accessories" className="flex items-center gap-1 data-[state=active]:bg-tibux-primary data-[state=active]:text-white">
                     <Sparkles size={16} /> Аксессуары
@@ -180,7 +180,7 @@ const Avatar = () => {
                 
                 <TabsContent value="pants">
                   <div className="p-8 flex flex-col items-center justify-center text-center text-gray-500">
-                    <Pants size={48} className="mb-4 opacity-30" />
+                    <Footprints size={48} className="mb-4 opacity-30" />
                     <h3 className="text-xl font-medium mb-2">Скоро будет доступно</h3>
                     <p className="max-w-md">Мы работаем над добавлением новых предметов. Заходите позже!</p>
                   </div>
