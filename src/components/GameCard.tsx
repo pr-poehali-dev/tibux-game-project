@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useState } from "react";
 import GameIframe from "./GameIframe";
-import { Gamepad2 } from "lucide-react";
+import { Gamepad2, Play } from "lucide-react";
 
 interface GameCardProps {
   id: string;
@@ -24,7 +24,7 @@ const GameCard = ({
   rating, 
   isFavorite = false,
   category,
-  gameUrl = "https://classic.minecraft.net/" // Default to Minecraft as a fallback
+  gameUrl = "https://eaglercraft.com/mc/1.12.2/" // Default to Minecraft as a fallback
 }: GameCardProps) => {
   const [isGameOpen, setIsGameOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -54,12 +54,14 @@ const GameCard = ({
                   className="bg-tibux-primary hover:bg-tibux-primary/90 transition-transform hover:scale-105 flex items-center gap-2" 
                   onClick={handlePlay}
                 >
-                  <Gamepad2 size={18} />
+                  <Play size={18} className="fill-white" />
                   Играть сейчас
                 </Button>
               </div>
             )}
           </AspectRatio>
+          
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-60 pointer-events-none"></div>
           
           {category && (
             <div className="absolute top-2 left-2 bg-tibux-primary text-white px-2 py-0.5 rounded text-xs font-semibold">
@@ -74,20 +76,16 @@ const GameCard = ({
               </svg>
             </div>
           )}
-        </div>
-        
-        <div className="p-3">
-          <h3 className="font-bold text-gray-800 mb-1 truncate">{title}</h3>
           
-          <div className="flex justify-between items-center mb-3">
-            <div className="text-xs text-gray-500 flex items-center">
+          <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+            <div className="text-xs text-white flex items-center bg-black/50 px-2 py-1 rounded-full">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 mr-1" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
               </svg>
               {playersCount.toLocaleString()}
             </div>
             
-            <div className="text-xs flex items-center text-yellow-500">
+            <div className="text-xs flex items-center bg-black/50 px-2 py-1 rounded-full">
               {Array.from({ length: 5 }).map((_, idx) => (
                 <svg 
                   key={idx} 
@@ -101,12 +99,16 @@ const GameCard = ({
               ))}
             </div>
           </div>
+        </div>
+        
+        <div className="p-3">
+          <h3 className="font-bold text-gray-800 mb-4 text-center">{title}</h3>
           
           <Button 
             className="w-full bg-tibux-primary hover:bg-tibux-primary/90 transition-transform hover:scale-105 flex items-center justify-center gap-2" 
             onClick={handlePlay}
           >
-            <Gamepad2 size={16} /> Играть
+            <Gamepad2 size={16} /> Играть в 3D
           </Button>
         </div>
       </div>

@@ -23,16 +23,16 @@ const featuredGames = [
     rating: 4.9,
     isFavorite: true,
     category: "3D Песочница",
-    gameUrl: "https://classic.minecraft.net/"
+    gameUrl: "https://eaglercraft.com/mc/1.12.2/"
   },
   {
     id: "2",
-    title: "Танки 3D",
+    title: "Танки Онлайн",
     imageUrl: "https://images.unsplash.com/photo-1600861194942-f883de0dfe96?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3",
     playersCount: 235478,
     rating: 4.7,
     category: "3D Экшн",
-    gameUrl: "https://www.playcademy.com/arcade/tanko/"
+    gameUrl: "https://tankionline.com/play/?lang=ru&utm_source=zorka&yclid=8230763533852475391"
   },
   {
     id: "3",
@@ -41,17 +41,17 @@ const featuredGames = [
     playersCount: 189456,
     rating: 4.6,
     category: "3D Гонки",
-    gameUrl: "https://www.crazygames.com/game/drift-hunters"
+    gameUrl: "https://yandex.ru/games/app/288626#app-id=288626&catalog-session-uid=catalog-8a806250-04fe-5675-85a8-36a96a4c0ec0-1746231957245-13a0&rtx-reqid=3891988100108729698&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22race%22%7D&redir-data=%7B%22block%22%3A%22cat_race%22%2C%22block_index%22%3A0%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A4%2C%22first_screen%22%3A1%2C%22page%22%3A%22cat_race%22%2C%22rn%22%3A385151934%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%223891988100108729698%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746231956897883-13623647633428813223-lxhwgumgg6wio6r6-BAL%22%2C%22games_request_id%22%3A%221746231956879607-162040330300167283-balancer-l7leveler-kubr-yp-vla-239-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fcategory%252Frace%22%7D"
   },
   {
     id: "4",
-    title: "Subway Surfers",
+    title: "Человек-паук",
     imageUrl: "https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3",
     playersCount: 423567,
     rating: 4.8,
     isFavorite: true,
-    category: "3D Runner",
-    gameUrl: "https://www.y8.com/embed/subway_surfers_monaco"
+    category: "3D Супергерои",
+    gameUrl: "https://yandex.ru/games/app/293587#app-id=293587&catalog-session-uid=catalog-8a806250-04fe-5675-85a8-36a96a4c0ec0-1746232013812-abd4&rtx-reqid=831589019064317280&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22tag%22%7D&redir-data=%7B%22block%22%3A%22tag_301%22%2C%22block_index%22%3A1%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A1%2C%22first_screen%22%3A1%2C%22page%22%3A%22tag_301%22%2C%22rn%22%3A891416293%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%22831589019064317280%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746232013619214-559350446965033741-c72hlbrbxiusc7tx-BAL%22%2C%22games_request_id%22%3A%221746232013577516-13039469020805294104-balancer-l7leveler-kubr-yp-vla-239-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Ftag%252Fchelovek_pauk_301%22%7D"
   },
   {
     id: "5",
