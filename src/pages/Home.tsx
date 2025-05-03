@@ -21,7 +21,8 @@ const featuredGames = [
     playersCount: 28456,
     rating: 4.8,
     isFavorite: true,
-    category: "Приключения"
+    category: "Приключения",
+    gameUrl: "https://play.idevgames.co.uk/embed/pacman/"
   },
   {
     id: "2",
@@ -29,7 +30,8 @@ const featuredGames = [
     imageUrl: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3",
     playersCount: 15234,
     rating: 4.5,
-    category: "Симуляторы"
+    category: "Симуляторы",
+    gameUrl: "https://play.idevgames.co.uk/embed/tetris/"
   },
   {
     id: "3",
@@ -37,7 +39,8 @@ const featuredGames = [
     imageUrl: "https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     playersCount: 12789,
     rating: 4.2,
-    category: "Выживание"
+    category: "Выживание",
+    gameUrl: "https://play.idevgames.co.uk/embed/snake/"
   },
   {
     id: "4",
@@ -45,7 +48,8 @@ const featuredGames = [
     imageUrl: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     playersCount: 9854,
     rating: 4.0,
-    category: "Гонки"
+    category: "Гонки",
+    gameUrl: "https://play.idevgames.co.uk/embed/asteroids/"
   },
   {
     id: "5",
@@ -54,7 +58,8 @@ const featuredGames = [
     playersCount: 21345,
     rating: 4.7,
     isFavorite: true,
-    category: "Сражения"
+    category: "Сражения",
+    gameUrl: "https://play.idevgames.co.uk/embed/minesweeper/"
   },
 ];
 
@@ -77,7 +82,7 @@ const Home = () => {
               Добро пожаловать в Tibux!
             </h1>
             <p className="text-white/90 text-lg mb-6">
-              Исследуй множество игр, создавай и настраивай своего персонажа, и играй с друзьями в мире Tibux.
+              Исследуй множество игр, создавай и настраивай своего робота-аватара, и играй с друзьями в мире Tibux.
             </p>
             <div className="flex gap-4">
               <Button className="bg-white text-tibux-primary hover:bg-white/90 font-semibold">
@@ -91,8 +96,8 @@ const Home = () => {
           
           <div className="hidden md:block absolute right-10 bottom-0">
             <img 
-              src="https://images.unsplash.com/photo-1575908539614-ff89490f4a78?auto=format&fit=crop&q=80&w=1342&ixlib=rb-4.0.3" 
-              alt="Character" 
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3" 
+              alt="Robot Character" 
               className="h-96 object-contain animate-float"
               style={{ filter: "drop-shadow(0 0 10px rgba(0,0,0,0.2))" }}
             />
@@ -191,7 +196,7 @@ const Home = () => {
         <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
             <h3 className="text-2xl font-bold text-white mb-2">Получи VIP-доступ!</h3>
-            <p className="text-white/90 max-w-xl">Разблокируй эксклюзивные игры, получи особые предметы и множество других преимуществ с VIP-статусом.</p>
+            <p className="text-white/90 max-w-xl">Разблокируй эксклюзивные игры, получи особые предметы для своего робота и множество других преимуществ с VIP-статусом.</p>
           </div>
           <Button className="bg-white text-yellow-600 hover:bg-white/90 font-semibold px-6">
             Купить VIP
