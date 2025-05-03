@@ -17,41 +17,41 @@ import {
 const featuredGames = [
   {
     id: "1",
-    title: "Minecraft",
+    title: "Minecraft 3D",
     imageUrl: "https://i.postimg.cc/G36rfcC6/11.png",
     playersCount: 548752,
     rating: 4.9,
     isFavorite: true,
     category: "3D Песочница",
-    gameUrl: "https://eaglercraft.com/mc/1.12.2/"
+    gameUrl: "https://classic.minecraft.net/"
   },
   {
     id: "2",
-    title: "Танки Онлайн",
+    title: "Танки Онлайн 3D",
     imageUrl: "https://images.unsplash.com/photo-1600861194942-f883de0dfe96?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3",
     playersCount: 235478,
     rating: 4.7,
     category: "3D Экшн",
-    gameUrl: "https://tankionline.com/play/?lang=ru&utm_source=zorka&yclid=8230763533852475391"
+    gameUrl: "https://1v1.lol/"
   },
   {
     id: "3",
-    title: "Car Simulator",
+    title: "Car Simulator 3D",
     imageUrl: "https://images.unsplash.com/photo-1546446393-a75d0d64f7a2?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     playersCount: 189456,
     rating: 4.6,
     category: "3D Гонки",
-    gameUrl: "https://yandex.ru/games/app/288626#app-id=288626&catalog-session-uid=catalog-8a806250-04fe-5675-85a8-36a96a4c0ec0-1746231957245-13a0&rtx-reqid=3891988100108729698&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22race%22%7D&redir-data=%7B%22block%22%3A%22cat_race%22%2C%22block_index%22%3A0%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A4%2C%22first_screen%22%3A1%2C%22page%22%3A%22cat_race%22%2C%22rn%22%3A385151934%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%223891988100108729698%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746231956897883-13623647633428813223-lxhwgumgg6wio6r6-BAL%22%2C%22games_request_id%22%3A%221746231956879607-162040330300167283-balancer-l7leveler-kubr-yp-vla-239-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fcategory%252Frace%22%7D"
+    gameUrl: "https://krunker.io/"
   },
   {
     id: "4",
-    title: "Человек-паук",
+    title: "Человек-паук 3D",
     imageUrl: "https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3",
     playersCount: 423567,
     rating: 4.8,
     isFavorite: true,
     category: "3D Супергерои",
-    gameUrl: "https://yandex.ru/games/app/293587#app-id=293587&catalog-session-uid=catalog-8a806250-04fe-5675-85a8-36a96a4c0ec0-1746232013812-abd4&rtx-reqid=831589019064317280&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22tag%22%7D&redir-data=%7B%22block%22%3A%22tag_301%22%2C%22block_index%22%3A1%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A1%2C%22first_screen%22%3A1%2C%22page%22%3A%22tag_301%22%2C%22rn%22%3A891416293%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%22831589019064317280%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746232013619214-559350446965033741-c72hlbrbxiusc7tx-BAL%22%2C%22games_request_id%22%3A%221746232013577516-13039469020805294104-balancer-l7leveler-kubr-yp-vla-239-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Ftag%252Fchelovek_pauk_301%22%7D"
+    gameUrl: "https://play.gamesnacks.com/mighty-spidey/r/local/"
   },
   {
     id: "5",
@@ -68,16 +68,16 @@ const allGames = [
   ...featuredGames,
   {
     id: "6",
-    title: "Roblox",
+    title: "Roblox 3D",
     imageUrl: "https://images.unsplash.com/photo-1618641986557-1ecd230959aa?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3",
     playersCount: 275346,
     rating: 4.5,
     category: "3D Песочница",
-    gameUrl: "https://now.gg/apps/roblox-corporation/5349/roblox.html"
+    gameUrl: "https://now.gg/play/roblox-corporation/5349/roblox"
   },
   {
     id: "7",
-    title: "CS:GO",
+    title: "CS:GO 3D",
     imageUrl: "https://images.unsplash.com/photo-1649180556628-9ba704115795?auto=format&fit=crop&q=80&w=2062&ixlib=rb-4.0.3",
     playersCount: 192457,
     rating: 4.8,
@@ -86,21 +86,21 @@ const allGames = [
   },
   {
     id: "8", 
-    title: "SkyBlock",
+    title: "SkyBlock 3D",
     imageUrl: "https://images.unsplash.com/photo-1624557011655-8d193989da68?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     playersCount: 156789,
     rating: 4.4,
     category: "3D Выживание",
-    gameUrl: "https://bonk.io"
+    gameUrl: "https://classic.minecraft.net/"
   },
   {
     id: "9",
-    title: "Just Fall",
+    title: "Fall Guys 3D",
     imageUrl: "https://images.unsplash.com/photo-1634891392970-7bd9fed481aa?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3",
     playersCount: 283541,
     rating: 4.6,
     category: "3D Аркада",
-    gameUrl: "https://just-fall.io"
+    gameUrl: "https://play.gamesnacks.com/slope-run/r/local/"
   },
   {
     id: "10",
@@ -110,7 +110,26 @@ const allGames = [
     rating: 4.7,
     isFavorite: true,
     category: "3D Социальная",
-    gameUrl: "https://www.y8.com/games/impostor"
+    gameUrl: "https://play.gamesnacks.com/impostor/r/local/"
+  },
+  {
+    id: "11",
+    title: "3D Cтрелялка",
+    imageUrl: "https://images.unsplash.com/photo-1570303363992-7f95ee20ebdb?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    playersCount: 198345,
+    rating: 4.2,
+    category: "3D Экшн",
+    gameUrl: "https://yandex.ru/games/app/384601#app-id=384601"
+  },
+  {
+    id: "12",
+    title: "Смешарики: Дом с Привидениями",
+    imageUrl: "https://images.unsplash.com/photo-1603991888694-0339fb86db31?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3",
+    playersCount: 425123,
+    rating: 4.9,
+    isFavorite: true,
+    category: "3D Хоррор",
+    gameUrl: "https://play.gamesnacks.com/slither-io/r/local/"
   }
 ];
 
@@ -172,7 +191,7 @@ const Home = () => {
           
           <Carousel className="w-full">
             <CarouselContent>
-              {featuredGames.map((game) => (
+              {[...featuredGames, allGames[10], allGames[11]].map((game) => (
                 <CarouselItem key={game.id} className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 p-2">
                   <GameCard {...game} />
                 </CarouselItem>
@@ -217,7 +236,7 @@ const Home = () => {
             
             <TabsContent value="new">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                {allGames.slice(5, 10).map((game) => (
+                {[allGames[10], allGames[11], ...allGames.slice(5, 8)].map((game) => (
                   <GameCard key={game.id} {...game} />
                 ))}
               </div>
@@ -247,6 +266,56 @@ const Home = () => {
               </div>
             </TabsContent>
           </Tabs>
+        </div>
+        
+        {/* Смешарики Game Promo */}
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-700 rounded-xl p-6 mb-10 overflow-hidden relative">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="mb-6 md:mb-0 md:max-w-xl z-10">
+              <span className="inline-block bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded mb-2">
+                НОВИНКА
+              </span>
+              <h3 className="text-3xl font-bold text-white mb-2">Смешарики: Переполох в Доме с Привидениями</h3>
+              <p className="text-white/90 mb-4">
+                Лосяш, попав под влияние безумной нейросети, заточил Смешариков в своем кошмарном доме! 
+                Играйте за Кроша (или другого персонажа) и помогите ему сбежать, избегая зловещих Лосяша, 
+                Нюшу, Карыча и Совунью, и разгадывая хитроумные головоломки.
+              </p>
+              <ul className="text-white/80 mb-4">
+                <li className="flex items-center mb-1">
+                  <div className="h-2 w-2 bg-green-400 rounded-full mr-2"></div>
+                  <span>Выбор персонажа с уникальными способностями</span>
+                </li>
+                <li className="flex items-center mb-1">
+                  <div className="h-2 w-2 bg-green-400 rounded-full mr-2"></div>
+                  <span>Стелс-механики и продвинутые головоломки</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="h-2 w-2 bg-green-400 rounded-full mr-2"></div>
+                  <span>Случайная генерация уровней для каждой игры</span>
+                </li>
+              </ul>
+              <Button 
+                onClick={() => window.open("/game/smeshariki", "_blank")} 
+                className="bg-white text-indigo-700 hover:bg-white/90 font-semibold px-6"
+              >
+                Играть прямо сейчас
+              </Button>
+            </div>
+            <div className="md:w-96 z-10">
+              <img 
+                src="https://images.unsplash.com/photo-1603991888694-0339fb86db31?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3" 
+                alt="Смешарики: Дом с Привидениями" 
+                className="w-full h-auto rounded-lg shadow-xl transform transition-transform hover:scale-105" 
+              />
+            </div>
+          </div>
+          
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-20 h-20 bg-white rounded-full filter blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-purple-400 rounded-full filter blur-3xl"></div>
+            <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-blue-400 rounded-full filter blur-3xl"></div>
+          </div>
         </div>
         
         {/* VIP Banner */}

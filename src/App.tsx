@@ -1,33 +1,29 @@
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import Avatar from "./pages/Avatar";
-import Settings from "./pages/Settings";
-import VipPage from "./pages/VipPage";
+import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import './App.css'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+import Avatar from './pages/Avatar'
+import Settings from './pages/Settings'
+import VipPage from './pages/VipPage'
+import GameDetail from './pages/GameDetail'
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+function App() {
+  return (
+    <>
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/avatar" element={<Avatar />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/vip" element={<VipPage />} />
+          <Route path="/game/smeshariki" element={<GameDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+      </Router>
+    </>
+  )
+}
 
-export default App;
+export default App
