@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useState } from "react";
 import GameIframe from "./GameIframe";
+import { Gamepad2 } from "lucide-react";
 
 interface GameCardProps {
   id: string;
@@ -23,26 +24,41 @@ const GameCard = ({
   rating, 
   isFavorite = false,
   category,
-  gameUrl
+  gameUrl = "https://classic.minecraft.net/" // Default to Minecraft as a fallback
 }: GameCardProps) => {
   const [isGameOpen, setIsGameOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handlePlay = () => {
     setIsGameOpen(true);
   };
 
-  const DEFAULT_GAME_URL = "https://play.idevgames.co.uk/embed/pacman/";
-
   return (
     <>
-      <div className="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+      <div 
+        className="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div className="relative">
           <AspectRatio ratio={16 / 9}>
             <img 
               src={imageUrl} 
               alt={title} 
-              className="w-full h-full object-cover" 
+              className="w-full h-full object-cover transition-transform duration-300"
+              style={{ transform: isHovered ? 'scale(1.05)' : 'scale(1)' }}
             />
+            {isHovered && (
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <Button 
+                  className="bg-tibux-primary hover:bg-tibux-primary/90 transition-transform hover:scale-105 flex items-center gap-2" 
+                  onClick={handlePlay}
+                >
+                  <Gamepad2 size={18} />
+                  Играть сейчас
+                </Button>
+              </div>
+            )}
           </AspectRatio>
           
           {category && (
@@ -87,10 +103,10 @@ const GameCard = ({
           </div>
           
           <Button 
-            className="w-full bg-tibux-primary hover:bg-tibux-primary/90 transition-transform hover:scale-105" 
+            className="w-full bg-tibux-primary hover:bg-tibux-primary/90 transition-transform hover:scale-105 flex items-center justify-center gap-2" 
             onClick={handlePlay}
           >
-            Играть
+            <Gamepad2 size={16} /> Играть
           </Button>
         </div>
       </div>
@@ -100,7 +116,7 @@ const GameCard = ({
           isOpen={isGameOpen} 
           onClose={() => setIsGameOpen(false)} 
           title={title} 
-          gameUrl={gameUrl || DEFAULT_GAME_URL} 
+          gameUrl={gameUrl} 
         />
       )}
     </>
